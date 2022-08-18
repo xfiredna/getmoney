@@ -1,0 +1,82 @@
+<!doctype html>
+<html>
+<head>
+nazeone.com
+<meta charset="utf-8">
+<title>NAZEONE : KIRA</title>
+<meta name="description" content="kawaii girls/ kpop jpop chinese girls/ asian girls/russian girls/programming/ nuke sauce/ movie/ tv series
+">
+<meta name="keywords" content="kawaii girls/ kpop jpop chinese girls/ asian girls/russian girls/programming/ nuke sauce/ movie/ tv series">
+<meta name="author" content="lxkira x nazeone">
+<meta name="categories" content="tech,anime,kpop,jpop,movie,tv">
+<meta name="robots" content="noindex, follow">
+<meta property="og:title" content="NAZEONE.COM">
+<meta property="og:description" content="kawaii girls/ kpop jpop chinese girls/ asian girls/russian girls/programming/ nuke sauce/ movie/ tv series
+">
+<meta property="og:image" content="images/296501193193201.jpg">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="NAZEONE.COM">
+<meta name="twitter:description" content="kawaii girls/ kpop jpop chinese girls/ asian girls/russian girls/programming/ nuke sauce/ movie/ tv series
+">
+<meta name="twitter:image" content="images/AdorableDeepArabianwildcat-max-1mb.gif">
+<meta name="generator" content="nazeone.com/index.htmlxd">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="Hopstarter-Soft-Scraps-Windows-Cascade.ico" rel="shortcut icon" type="image/x-icon">
+<link href="folder.png" rel="icon" sizes="512x512" type="image/png">
+<link href="folder.png" rel="icon" sizes="512x512" type="image/png">
+<link href="folder.png" rel="apple-touch-icon" sizes="512x512">
+<link href="css/21nazeone.com.css" rel="stylesheet">
+<link href="css/index.css" rel="stylesheet">
+<script src="js/jquery-1.12.4.min.js"></script>
+<script src="js/jquery.ui.effect.min.js"></script>
+<script>   
+   $(document).ready(function()
+   {
+      $("a[href*='#header']").click(function(event)
+      {
+         event.preventDefault();
+         $('html, body').stop().animate({ scrollTop: $('#wb_header').offset().top }, 600, 'easeInSine');
+      });
+      function resizeVideo() 
+      {
+         var ratio = 16/9;
+         var widthViewPort = $(window).width();
+         var heightViewPort = $(window).height();
+         var width, height;
+         var $player = $('#MediaPlayer1');
+         if (widthViewPort / ratio < heightViewPort)
+         {
+            width = Math.ceil(heightViewPort * ratio);
+            $player.width(width).height(heightViewPort).css({left: (widthViewPort - width) / 2, top: 0});
+         }
+         else
+         {
+            height = Math.ceil(widthViewPort / ratio);
+            $player.width(widthViewPort).height(height).css({left: 0, top: (heightViewPort - height) / 2});
+         }
+      }
+      $(window).on('resize', function() 
+      {
+         resizeVideo();
+      })
+      resizeVideo();
+   });
+</script>
+</head>
+<body>
+   <div id="wb_header">
+      <div id="header">
+         <div class="row">
+            <div class="col-1">
+            </div>
+         </div>
+      </div>
+   </div>
+   <a href="https://www.wysiwygwebbuilder.com" target="_blank"><img src="images/builtwithwwb17.png" alt="WYSIWYG Web Builder" style="position:absolute;left:441px;top:5229px;margin:0;border-width:0;z-index:250" width="16" height="16"></a>
+   <div id="wb_MediaPlayer1" style="position:absolute;left:27px;top:109px;width:968px;height:544px;z-index:2;">
+      <video id="MediaPlayer1" autoplay loop>
+         <source src="Rick Astley - Never Gonna Give You Up (Video) (1).mp4" type="video/mp4">
+      </video>
+   </div>
+</body>
+</html>
